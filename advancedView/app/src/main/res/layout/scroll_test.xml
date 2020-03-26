@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--ScrollView의 하위는 한 개이어야 한다.-->
+    <!--fillViewport: linear 레이아웃이 꽉차게 보여집니다 라는 속성-->
+    <!--fillViewport 항상 true로 필수이다.-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#009688"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#4CAF50"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#FFEB3B"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
