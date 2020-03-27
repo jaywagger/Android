@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Frame_test</string>
+    <string name="menu1">로그인</string>
+    <string name="menu2">회원가입</string>
+    <string name="menu3">상세정보</string>
+
+
+</resources>
