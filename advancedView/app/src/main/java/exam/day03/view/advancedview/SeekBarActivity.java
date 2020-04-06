@@ -19,6 +19,7 @@ public class SeekBarActivity extends AppCompatActivity
     Button btn2;
     Button btn3;
     Button btn4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +42,6 @@ public class SeekBarActivity extends AppCompatActivity
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
         btn4.setOnClickListener(this);
-
         seek1.setOnSeekBarChangeListener(this);
         seek2.setOnSeekBarChangeListener(this);
     }
@@ -51,7 +51,7 @@ public class SeekBarActivity extends AppCompatActivity
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.seekBtn1:
+            case R.id.seekBtn1: //버튼1의 아이디
                 //값을 증가
                 seek1.incrementProgressBy(1);
                 seek2.incrementProgressBy(1);
@@ -64,32 +64,32 @@ public class SeekBarActivity extends AppCompatActivity
             case R.id.seekBtn3:
                 //값을 설정
                 seek1.setProgress(5);
-                seek2.setProgress(10);
+                seek2.setProgress(6);
                 break;
             case R.id.seekBtn4:
                 //값을 가져오기
-                int value1 = seek1.getProgress();
-                text1.setText("seek1:"+value1);
+                //int value1 = seek1.getProgress();
+                text1.setText("seek1:"+seek1.getProgress());
                 text2.setText("seek2: "+seek2.getProgress());
                 break;
         }
     }
 
-    //Seekbar의 값이 ㅂ녀경되었을 때 호출되는 메서드
+    //Seekbar의 값이 변경되었을 때 호출되는 메서드
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         int id = seekBar.getId();
 
         switch (id){
             case R.id.seekBar:
-            text1.setText("첫 번째 seekbar:"+progress);
+                text1.setText("첫 번째 seekbar:"+progress);
                 break;
 
             case R.id.seekBar2:
-                    text1.setText("두 번째 seekbar:"+progress);
-                    break;
-
+                text1.setText("두 번째 seekbar:"+progress);
+                break;
         }
+
         if(fromUser){
             text2.setText("사용자가 변경");
         }else{

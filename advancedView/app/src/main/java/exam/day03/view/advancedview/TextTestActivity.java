@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class TextTestActivity extends AppCompatActivity {
 
     //layout 페이지에서 사용할 뷰에 대한 리소스를 불러와야한다: 변수선언
-    EditText txtinfo;
+    EditText editTxt;
     TextView lblinfo;
 
     @Override
@@ -19,7 +19,7 @@ public class TextTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_test);
         lblinfo = findViewById(R.id.myinfo);
-        txtinfo = findViewById(R.id.mytext);
+        editTxt = findViewById(R.id.mytext);
 
         Button btngetter = findViewById(R.id.btnget);
         Button btnsetter = findViewById(R.id.btnset);
@@ -28,7 +28,7 @@ public class TextTestActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-               String msg = txtinfo.getText()+"";
+               String msg = editTxt.getText()+"";
                lblinfo.setText(msg);
             }
         });
@@ -37,7 +37,7 @@ public class TextTestActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                txtinfo.setText("가져온 문자열: 작업완료");
+                editTxt.setText("가져온 문자열: 작업완료");
             }
         });
     }
