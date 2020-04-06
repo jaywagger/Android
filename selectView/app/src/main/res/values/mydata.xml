@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mylist_data">
+        <item>이정윤</item>
+        <item>문준우</item>
+        <item>황제윤</item>
+        <item>김현정</item>
+        <item>박누리</item>
+        <item>곽혜란</item>
+        <item>김서연</item>
+        <item>이정윤</item>
+        <item>문준우</item>
+        <item>황제윤</item>
+        <item>김현정</item>
+        <item>박누리</item>
+        <item>곽혜란</item>
+        <item>김서연</item>
+
+    </string-array>
+
+
+</resources>
