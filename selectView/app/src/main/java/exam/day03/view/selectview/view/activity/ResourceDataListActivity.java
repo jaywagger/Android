@@ -1,4 +1,4 @@
-package exam.day03.view.selectview;
+package exam.day03.view.selectview.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import exam.day03.view.selectview.R;
 
 //리소스 파일 mydata를 만들어서 리스트로 출력하기
 public class ResourceDataListActivity extends AppCompatActivity {
