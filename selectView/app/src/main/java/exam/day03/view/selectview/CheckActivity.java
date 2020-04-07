@@ -35,8 +35,8 @@ public class CheckActivity extends AppCompatActivity {
         setCheckBtn = findViewById(R.id.btnCheck2);
         clearCheckBtn = findViewById(R.id.btnCheck3);
         reverseCheckStats = findViewById(R.id.btnCheck4);
-
         myswitch = findViewById(R.id.switch1);
+
         CheckBoxListener listener = new CheckBoxListener();
 
         // 체크박스에 리스너를 설정한다.

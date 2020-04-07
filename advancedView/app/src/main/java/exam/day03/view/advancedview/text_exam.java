@@ -31,6 +31,5 @@ public class text_exam extends AppCompatActivity {
         });
 
 
-
     }
 }

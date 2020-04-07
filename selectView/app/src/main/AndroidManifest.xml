@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+<<<<<<< HEAD
         <activity android:name=".view.activity.SpinnerTestActivity">
+=======
+        <activity android:name=".CheckActivity">
+>>>>>>> e1e46e69dbd48dd9e922b98af4dd8a59ffbacf86
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

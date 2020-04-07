@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GoogldMapExercise</string>
+    <string name="map_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAP8aGgJtBB6H8vvcZ9GHXUyTvcWhKS3FM</string>
+
+
+
+</resources>
