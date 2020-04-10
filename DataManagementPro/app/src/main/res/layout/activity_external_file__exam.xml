@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".filesystem.ExternalFile_Exam"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnRead"
+            android:text="열기" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnWrite"
+            android:text="저장하기" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnNew"
+            android:text="새파일" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="지금은 안드로이드 외부저장소에 파일을 저장하고\n저장된 파일을 오픈하는 연습을 하는 시간입니다."
+        android:textSize="16sp" />
+
+
+</LinearLayout>
