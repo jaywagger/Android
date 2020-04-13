@@ -1,8 +1,10 @@
-package multi.android.map_location_pro;
+package multi.android.map_location_pro.map;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import multi.android.map_location_pro.R;
 
 public class MainActivity extends AppCompatActivity {
 

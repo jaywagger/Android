@@ -15,8 +15,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import multi.exam.view.permissiontestapp.R;
-
 public class ExamAdapter extends ArrayAdapter<ActorItem> {
     private Context context;
     private int resId;//view에 대한 리소스
