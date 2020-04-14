@@ -2,12 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="multi.android.support_lib">
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET"/>
 
-
-=======
->>>>>>> 6e2e37a2396b3f6fbf78b16efa3188b2eb622216
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,14 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
+
         <activity android:name=".fragment.exam.FragmentTestMain2"></activity>
         <activity android:name=".viewpager.ViewPagerTest" />
         <activity android:name=".fragment.exam.FragmentExam01" />
         <activity android:name=".viewpager.exam.FragmentViewPager" />
         <activity android:name=".viewpager.exam.view_pager_main"/>
-=======
->>>>>>> 6e2e37a2396b3f6fbf78b16efa3188b2eb622216
+
         <activity android:name=".fragment.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,12 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCBX_om8PnGlevs31DDIy1h4NeNSRlJEJg" />
-=======
->>>>>>> 6e2e37a2396b3f6fbf78b16efa3188b2eb622216
+
     </application>
 
 </manifest>

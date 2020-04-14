@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
 
         //xml 버튼연결
         Button btnFirst = findViewById(R.id.btnAddFrag);
@@ -28,21 +27,16 @@ public class MainActivity extends AppCompatActivity {
         Button btnSecond = findViewById(R.id.btnSecondFrag);
 
         //클릭 이벤트: 버튼과 Fragment 연결
-=======
-        Button btnFirst = findViewById(R.id.btnAddFrag);
-        Button btnRemove = findViewById(R.id.btnRemoveFrag);
-        Button btnSecond = findViewById(R.id.btnSecondFrag);
->>>>>>> 6e2e37a2396b3f6fbf78b16efa3188b2eb622216
         btnFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setFragment("first");
-<<<<<<< HEAD
+
             }//first = Fragment 메서드 switch
-=======
-            }
->>>>>>> 6e2e37a2396b3f6fbf78b16efa3188b2eb622216
-        });
+
+        }
+    );
+
         btnRemove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
