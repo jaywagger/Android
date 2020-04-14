@@ -1,5 +1,6 @@
 package multi.android.support_lib.fragment;
 
+<<<<<<< HEAD
 import android.content.Context;
 import android.os.Bundle;
 
@@ -8,6 +9,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
+=======
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
+>>>>>>> 6e2e37a2396b3f6fbf78b16efa3188b2eb622216
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,11 +25,20 @@ import multi.android.support_lib.R;
  * A simple {@link Fragment} subclass.
  */
 public class FirstFragment extends Fragment {
+<<<<<<< HEAD
+=======
+
+    public FirstFragment() {
+        // Required empty public constructor
+    }
+
+>>>>>>> 6e2e37a2396b3f6fbf78b16efa3188b2eb622216
     //fragment뷰가 만들어질때 호출되는 메소드
     //액티비티에 배치될때 호출되는 메소드 - view를 그리기 위해서 호출하는 메소ㅡ
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+<<<<<<< HEAD
         Log.d("lifecycle","fragment=============onCreateView");
         return inflater.inflate(R.layout.fragment_first2, container, false);
     }
@@ -99,4 +115,9 @@ public class FirstFragment extends Fragment {
     }
 
 
+=======
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_first, container, false);
+    }
+>>>>>>> 6e2e37a2396b3f6fbf78b16efa3188b2eb622216
 }
