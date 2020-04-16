@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">material_design_pro</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="monday">Monday</string>
+    <string name="tab">Tab연습</string>
+</resources>

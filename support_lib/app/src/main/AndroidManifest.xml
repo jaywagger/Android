@@ -15,10 +15,10 @@
         <activity android:name=".fragment.exam.FragmentTestMain2"></activity>
         <activity android:name=".viewpager.ViewPagerTest" />
         <activity android:name=".fragment.exam.FragmentExam01" />
-        <activity android:name=".viewpager.exam.FragmentViewPager" />
+        <activity android:name=".fragment.MainActivity" />
         <activity android:name=".viewpager.exam.view_pager_main"/>
 
-        <activity android:name=".fragment.MainActivity">
+        <activity android:name=".viewpager.exam.FragmentViewPager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
