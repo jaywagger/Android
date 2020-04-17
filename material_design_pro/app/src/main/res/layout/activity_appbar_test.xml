@@ -53,12 +53,31 @@
             android:layout_height="wrap_content" />
     </androidx.core.widget.NestedScrollView>
 
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        app:backgroundTint="#03A9F4" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:src="@android:drawable/ic_input_add" />"
+        android:clickable="true"
+        app:backgroundTint="#3F51B5"
+        app:layout_anchor="@id/bottom_bar"
+        android:src="@android:drawable/ic_input_add" />
+    <!-- app:layout_anchor="@id/bottom_bar"기준으로 정렬하여 홈버튼 만들기-->
+
+    <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+         android:id="@+id/fab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|end"
+         android:layout_margin="16dp"
+         android:src="@android:drawable/ic_input_add"
+         />"-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

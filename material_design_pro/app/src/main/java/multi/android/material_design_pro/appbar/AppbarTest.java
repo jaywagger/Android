@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.lang.reflect.Array;
@@ -29,6 +30,7 @@ public class AppbarTest extends AppCompatActivity {
     FloatingActionButton fab;
     ListView listView;
     ArrayList<String> datalist = new ArrayList<String>();
+    BottomAppBar bottomAppBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ public class AppbarTest extends AppCompatActivity {
         toolbarLayout = findViewById(R.id.toolbar_layout);
         fab=findViewById(R.id.fab);
         listView = findViewById(R.id.mylistview);
-
+        bottomAppBar = findViewById(R.id.bottom_bar);
 
         //앱바 이미지 변경
         app_bar_image.setImageResource(R.drawable.lee);
@@ -49,6 +51,11 @@ public class AppbarTest extends AppCompatActivity {
         toolbar.setTitle("툴바입니다");
         toolbarLayout.setCollapsedTitleTextColor(Color.CYAN);
         toolbarLayout.setExpandedTitleColor(Color.WHITE);
+
+        //버텀 디자인
+        bottomAppBar.setFabAlignmentMode(BottomAppBar.FAB_ALIGNMENT_MODE_CENTER);
+        bottomAppBar.setFabCradleRoundedCornerRadius(100);
+        bottomAppBar.setFabCradleMargin(20);
 
 
         //리스트

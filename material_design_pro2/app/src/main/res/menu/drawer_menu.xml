@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="회원정보" />
+    <item
+        android:id="@+id/item2"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="마이페이지" />
+    <item
+        android:id="@+id/item3"
+        android:icon="@android:drawable/presence_offline"
+        android:title="계정탈퇴" />
+    <item
+        android:id="@+id/item4"
+        android:icon="@android:drawable/ic_lock_idle_lock"
+        android:title="로그아웃" />
+</menu>
