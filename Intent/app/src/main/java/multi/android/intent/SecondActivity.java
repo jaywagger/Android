@@ -15,6 +15,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second);
         Button bt2 = findViewById(R.id.bt2);
+
         //인텐트 객체 추출
         Intent intent = getIntent();
         //인텐트 객체에서 공유된 값을 꺼내기

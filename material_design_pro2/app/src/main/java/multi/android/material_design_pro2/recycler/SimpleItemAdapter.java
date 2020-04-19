@@ -49,6 +49,7 @@ public class SimpleItemAdapter
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
         Log.d("recycler","onBindViewHolder: "+position);
         //holder.textView.setText(data.get(position)+"");
         //ViewHolder가 찾아놓은 TextView를 꺼내고
