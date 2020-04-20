@@ -29,8 +29,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Custom
     Context context;
 
     //리스트 생성자
-    public RecyclerAdapter(ArrayList<DTORecycler> arrayList) {
+    public RecyclerAdapter(ArrayList<DTORecycler> arrayList,Context context) {
         this.arrayList = arrayList;
+        this.context = context;
     }
 
     //LayoutInflater란 xml 파일을 View 객체로 변환해주는 기능
@@ -72,7 +73,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Custom
     }
 
     public void popup(){
-        final Dialog MyDialog = new Dialog(RecyclerAdapter.this);
+        final Dialog MyDialog = new Dialog(context);
         MyDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         MyDialog.setContentView(R.layout.activity_click_function);
         MyDialog.setTitle("My Custom Dialog");
@@ -83,7 +84,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Custom
         runCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(RecyclerAdapter.this, "전화",Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "전화",Toast.LENGTH_SHORT).show();
 
             }
         });

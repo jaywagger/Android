@@ -30,7 +30,7 @@ public class RecyclerAmong extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
 
-        recyclerAdapter = new RecyclerAdapter(arrayList);
+        recyclerAdapter = new RecyclerAdapter(arrayList,this);
         recyclerlist.setAdapter(recyclerAdapter);
 
         //추가버튼

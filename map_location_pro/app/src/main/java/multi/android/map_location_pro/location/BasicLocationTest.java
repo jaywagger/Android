@@ -24,6 +24,7 @@ public class BasicLocationTest extends AppCompatActivity {
     LocationManager locationManager;
     TextView result;
     boolean permission_state;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
