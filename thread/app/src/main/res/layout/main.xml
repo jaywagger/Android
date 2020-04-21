@@ -20,31 +20,40 @@
         android:paddingBottom="50px" />
 
     <Button
-		android:id="@+id/btnNoThread"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="Thread 사용안함"
+        android:id="@+id/btnNoThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="btnNoThread"
-        />
-	<Button
-		android:id="@+id/btnThread01"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="잘못된 Thread 사용 예\nWorker Thread에서 UI조작함" />
+        android:text="Thread 사용안함" />
+
+    <Button
+        android:id="@+id/btnThread01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="useThread"
+        android:text="잘못된 Thread 사용 예\nWorker Thread에서 UI조작함" />
 	
 	<Button
 		android:id="@+id/btnThread02"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="Thread \n Handler객체 사용" />
+		android:text="Thread \n Handler객체 사용"
+		android:onClick="useHandler"/>
 	<Button
 		android:id="@+id/btnThread03"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="Thread \n Handler객체 사용2" />
+		android:text="Thread \n Handler객체 사용2"
+		android:onClick="useMessageHandler"/>
 	<Button
 		android:id="@+id/showdata"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:text="데이터보기" />
+
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 </LinearLayout>

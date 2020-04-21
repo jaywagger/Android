@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.exercise">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".intent.ClickFunction"></activity>
+        <activity android:name=".temp.temp1"></activity>
+        <activity android:name=".intent.ClickFunction" />
         <activity android:name=".carview.cardView" />
         <activity android:name=".MainActivity" />
         <activity android:name=".recycler.RecyclerAmong">
@@ -20,5 +23,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
 </manifest>
