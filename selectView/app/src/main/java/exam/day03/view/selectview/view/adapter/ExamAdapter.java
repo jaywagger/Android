@@ -18,8 +18,7 @@ public class ExamAdapter extends ArrayAdapter<ActorItem> {
     private int resId;
     private ArrayList<ActorItem> datalist;
 
-    HashMap<Integer,UserState> saveData =
-            new HashMap<Integer,UserState>();
+    HashMap<Integer,UserState> saveData = new HashMap<Integer,UserState>();
 
     public ExamAdapter(Context context, int resId, ArrayList<ActorItem> datalist) {
         super(context, resId, datalist);

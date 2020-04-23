@@ -7,15 +7,17 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".temp.temp1"></activity>
+        <activity android:name=".recycler.RecyclerAmong"></activity>
+        <activity android:name=".temp.temp1" />
         <activity android:name=".intent.ClickFunction" />
         <activity android:name=".carview.cardView" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".recycler.RecyclerAmong">
+
+        <activity android:name=".childView.bottomAppBar"/>
+        <activity android:name=".childView.ChildFirstPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

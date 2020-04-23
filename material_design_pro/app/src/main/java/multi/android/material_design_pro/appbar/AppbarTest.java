@@ -38,7 +38,7 @@ public class AppbarTest extends AppCompatActivity {
         setContentView(R.layout.activity_appbar_test);
 
         toolbar = findViewById(R.id.toolbar);
-        app_bar_image = findViewById(R.id.app_bar_image);
+
         toolbarLayout = findViewById(R.id.toolbar_layout);
         fab=findViewById(R.id.fab);
         listView = findViewById(R.id.mylistview);
