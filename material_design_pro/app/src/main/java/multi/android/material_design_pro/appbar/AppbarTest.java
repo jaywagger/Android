@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -38,73 +39,76 @@ public class AppbarTest extends AppCompatActivity {
         setContentView(R.layout.activity_appbar_test);
 
         toolbar = findViewById(R.id.toolbar);
-
+        app_bar_image = findViewById(R.id.app_bar_image);
         toolbarLayout = findViewById(R.id.toolbar_layout);
-        fab=findViewById(R.id.fab);
-        listView = findViewById(R.id.mylistview);
         bottomAppBar = findViewById(R.id.bottom_bar);
+        fab = findViewById(R.id.fab);
+        listView = findViewById(R.id.mylistview);
 
         //앱바 이미지 변경
         app_bar_image.setImageResource(R.drawable.lee);
 
-        //1. Appbar에 텍스트
-        toolbar.setTitle("툴바입니다");
+        //1. Appbar에 텍스트 추가, 변경
+        toolbar.setTitle("툴바입니다.");
         toolbarLayout.setCollapsedTitleTextColor(Color.CYAN);
         toolbarLayout.setExpandedTitleColor(Color.WHITE);
 
-        //버텀 디자인
+        toolbarLayout.setCollapsedTitleGravity(Gravity.CENTER);
+        toolbarLayout.setExpandedTitleGravity(Gravity.RIGHT+Gravity.TOP);//오른쪽 위. 상수라서 +로 연결
+
         bottomAppBar.setFabAlignmentMode(BottomAppBar.FAB_ALIGNMENT_MODE_CENTER);
         bottomAppBar.setFabCradleRoundedCornerRadius(100);
         bottomAppBar.setFabCradleMargin(20);
 
-
-        //리스트
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,
                 android.R.id.text1,
                 datalist);
-
         listView.setAdapter(adapter);
 
-        //FloadtingActionButton을 눌렀을 때 대화상자가 뜨고 입력한 데이터가
-        //리스트뷰에 추가되도록 구현
-        fab.setOnClickListener(new View.OnClickListener() {
+        //FloatingActionButton을 눌렀을 때 대화상자가 뜨고 입력한 데이터가 리스트뷰에 추가되도록 구현
+        fab.setOnClickListener(new View.OnClickListener(){
+
+
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder =
                         new AlertDialog.Builder(AppbarTest.this);
-                //AlerDialog의 타이틀을 정의
+                //AlertDialog의 타이틀을 정의
                 builder.setTitle("데이터입력");
 
-                //AlerDialog에 보여질 화면을 inflate
+                //AlertDialog에 보여질 화면을 inflate
                 LayoutInflater inflater = getLayoutInflater();
-                View dialogView = inflater.inflate(R.layout.input, null);
-                //AlerDialog에 추가할 버튼을 정의
-                builder.setPositiveButton("확인",new DialogListener());
-                builder.setNegativeButton("취소", null);
-                //AlerDialog에 화면 설정
+                View dialogView = inflater.inflate(R.layout.input, null);//뷰를 따로 만들어 작업
+
+                //AlertDialog에 추가할 버튼을 정의
+                builder.setPositiveButton("확인", new DialogListener());
+                builder.setNegativeButton("취소",new DialogListener());
+                //AlertDialog에 화면 설정. 붙이기
                 builder.setView(dialogView);
                 builder.show();
 
             }
         });
+
+
+
     }
+
     class DialogListener implements DialogInterface.OnClickListener{
 
         @Override
         public void onClick(DialogInterface dialog, int which) {
-            //AlertDialog에서 입력한 내용을 ListView에 추가하기
-            AlertDialog inputAlert = (AlertDialog)dialog; //뷰가 inputAlert안으로.
+            //AlrtDialog에서입력하는 내용을 ListView에 추가하기
+            AlertDialog inputAlert = (AlertDialog)dialog;
             EditText input = inputAlert.findViewById(R.id.input);
             String data = input.getText().toString();
             datalist.add(data);
 
-            //ArrayList에 데이터를 추가한 후 adapter가 가지고 있는 데이터를 업데이트
-            // => adapter에게 데이터가 변경되었음을 알려줘야 한다
-            ArrayAdapter<String> adapter = (ArrayAdapter<String>) listView.getAdapter();
+            //ArrayList에 데이터를 추가한 후 adapter가 갖고 있는 데이터를 업데이트
+            //=> Adapter에게 데이터가 변경되었음을 알려주는 작업
+            ArrayAdapter<String> adapter = (ArrayAdapter<String>)listView.getAdapter();
             adapter.notifyDataSetChanged();
-
         }
     }
-
 }

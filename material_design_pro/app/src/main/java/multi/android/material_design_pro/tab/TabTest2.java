@@ -33,7 +33,7 @@ public class TabTest2 extends AppCompatActivity {
         pager = findViewById(R.id.pager);
 
         tabLayout.setTabTextColors(Color.CYAN,Color.WHITE);
-        for (int i=1; i<10; i++){
+        for (int i=1; i<=5; i++){
             ChildFragment fragment = new ChildFragment();
             fragment.setTitle("작업중인 프레그먼트"+i);
             fragmentArrayList.add(fragment);

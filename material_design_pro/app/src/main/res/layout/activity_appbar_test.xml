@@ -47,13 +47,16 @@
         android:layout_height="match_parent"
 
 
-        android:background="#F1F0F0"
+        android:fillViewport="true"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
 
         <ListView
             android:id="@+id/mylistview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content" >
+
+        </ListView>
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -61,17 +64,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-
-        app:backgroundTint="#03A9F4" />
+        app:backgroundTint="#CEEC89" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        app:backgroundTint="#3F51B5"
-        app:layout_anchor="@id/bottom_bar"
-        android:src="@android:drawable/ic_input_add" />
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#F6A6A6"
+        app:layout_anchor="@id/bottom_bar" />
+
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#E02323" />"-->
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

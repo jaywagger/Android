@@ -10,18 +10,14 @@ import android.widget.ListView;
 import com.example.exercise.R;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 public class ChildFirstPage extends AppCompatActivity {
-    //바텀바
-    Toolbar toolbar;
-    CollapsingToolbarLayout toolbarLayout;
-    FloatingActionButton fab;
-    ListView listView;
-    ArrayList<String> datalist = new ArrayList<String>();
-    BottomAppBar bottomAppBar;
+
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,8 +63,6 @@ public class ChildFirstPage extends AppCompatActivity {
                 new ProfileAdapter(this, R.layout.activity_child_first_page_row,profilelist);
         //3. ListView에 어댑터 연결
         listView.setAdapter(adapter);
-
-
 
     }
 }
