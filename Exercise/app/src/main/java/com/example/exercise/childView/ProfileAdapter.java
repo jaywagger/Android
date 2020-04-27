@@ -55,11 +55,13 @@ public class ProfileAdapter extends ArrayAdapter<ProfileItem> {
         if(user!=null){
 
             ImageView imageView = holder.myImg;
+            ImageView mapView = holder.myMap;
             TextView nameView = holder.nameView;
             TextView msgView = holder.msgView;
 
 
             imageView.setImageResource(user.profile_img);
+            mapView.setImageResource(user.profile_map);
             nameView.setText(user.profile_name);
             msgView.setText(user.profile_msg);
 

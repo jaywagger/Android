@@ -32,29 +32,29 @@ public class ChildFirstPage extends AppCompatActivity {
         //여러 아이템을 모을 리스트
         ArrayList<ProfileItem> profilelist = new ArrayList<ProfileItem>();
         //각각 하나의 아이템에 데이터 넣기
-        profileItem= new ProfileItem(R.drawable.a8,"아버지","우리 3조");
+        profileItem= new ProfileItem(R.drawable.a8,"아버지","우리 3조",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a2,"어머니","화이팅");
+        profileItem= new ProfileItem(R.drawable.a2,"어머니","화이팅",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a5,"짱아","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a5,"짱아","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a9,"흰둥이","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a9,"흰둥이","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a3,"유리","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a3,"유리","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a4,"훈이","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a4,"훈이","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a6,"철수","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a6,"철수","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a7,"맹구","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a7,"맹구","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a3,"유리","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a3,"유리","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a4,"훈이","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a4,"훈이","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a6,"철수","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a6,"철수","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
-        profileItem= new ProfileItem(R.drawable.a7,"맹구","짝짝짝!!!");
+        profileItem= new ProfileItem(R.drawable.a7,"맹구","짝짝짝!!!",R.drawable.map);
         profilelist.add(profileItem);
 
 

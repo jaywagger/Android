@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Exercise</string>
+    <string name="app_name">어몽</string>
     <string name="title_home">홈</string>
     <string name="title_wellfare">복지</string>
     <string name="title_chat">채팅</string>
     <string name="title_community">커뮤니티</string>
-    <string name="title_question">아직모름</string>
+    <string name="title_calendar">일정</string>
 
 </resources>
 
