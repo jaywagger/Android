@@ -14,9 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".map.MapEventTest"></activity>
-        <activity android:name=".map.MainActivity"></activity>
         <activity android:name=".location.BasicLocationTest2"/>
-        <activity android:name=".location.LocationMapExam2">
+
+        <activity android:name=".location.LocationMapExam2"/>
+        <activity android:name=".map.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

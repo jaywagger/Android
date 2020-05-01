@@ -56,6 +56,7 @@ public class AppbarTest extends AppCompatActivity {
         toolbarLayout.setCollapsedTitleGravity(Gravity.CENTER);
         toolbarLayout.setExpandedTitleGravity(Gravity.RIGHT+Gravity.TOP);//오른쪽 위. 상수라서 +로 연결
 
+        //가운데 파이게 하는거
         bottomAppBar.setFabAlignmentMode(BottomAppBar.FAB_ALIGNMENT_MODE_CENTER);
         bottomAppBar.setFabCradleRoundedCornerRadius(100);
         bottomAppBar.setFabCradleMargin(20);

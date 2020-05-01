@@ -50,13 +50,9 @@ public class SimpleItemAdapter
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        Log.d("recycler","onBindViewHolder: "+position);
-        //holder.textView.setText(data.get(position)+"");
-        //ViewHolder가 찾아놓은 TextView를 꺼내고
+
         TextView row_text_view = holder.textView;
-        //꺼낸 TextView에 데이터 연결
         row_text_view.setText(data.get(position).getData());
-        //TextView에 클릭이벤트 연결
         row_text_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

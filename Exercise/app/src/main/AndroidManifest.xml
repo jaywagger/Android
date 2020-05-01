@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recycler.RecyclerAmong" />
+        <activity android:name=".Among.bottom.bottomNavigationBar" />
         <activity android:name=".temp.temp1" />
         <activity android:name=".intent.ClickFunction" />
         <activity android:name=".carview.cardView" />
@@ -19,7 +19,7 @@
         <activity android:name=".childView.bottomAppBar" />
 
         <activity android:name=".childView.ChildFirstPage"/>
-        <activity android:name=".Among.bottom.bottomNavigationBar">
+        <activity android:name=".recycler.RecyclerAmong">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

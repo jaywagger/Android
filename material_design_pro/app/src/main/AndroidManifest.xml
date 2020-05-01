@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".exam.FragmentExam01"/>
         <activity android:name=".actionbar.ActionBarTest" />
-        <activity android:name=".appbar.AppbarTest" />
+        <activity android:name=".actionbar.SubActivity"/>
         <activity android:name=".toolbar.ToolBarTest" />
         <activity android:name=".menu.OptionMenuTest" />
         <activity android:name=".tab.TabTest"/>
@@ -20,7 +20,7 @@
 
         <activity android:name=".actionbar.ActionBarNavi" />
 
-        <activity android:name=".actionbar.SubActivity" >
+        <activity android:name=".appbar.AppbarTest" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
