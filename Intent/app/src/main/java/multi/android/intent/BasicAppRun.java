@@ -81,7 +81,7 @@ public class BasicAppRun extends AppCompatActivity {
             int chk = checkCallingOrSelfPermission(permission);
             //권한 셀프 체크가 안되는 경우에
             if(chk== PackageManager.PERMISSION_DENIED){
-                requestPermissions(permission_list,0);
+                    requestPermissions(permission_list,0);
                 break;
             }
 

@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recycler.SimpleRecyclerTest"></activity>
+        <activity android:name=".cardview.CardViewTest"></activity>
         <activity android:name=".drawer.DrawerTest" />
-        <activity android:name=".cardview.CardViewTest">
+        <activity android:name=".recycler.SimpleRecyclerTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

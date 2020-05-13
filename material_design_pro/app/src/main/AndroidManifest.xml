@@ -11,7 +11,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".exam.FragmentExam01"/>
         <activity android:name=".actionbar.ActionBarTest" />
+<<<<<<< HEAD
         <activity android:name=".actionbar.SubActivity" />
+=======
+        <activity android:name=".actionbar.SubActivity"/>
+>>>>>>> e2b32f1e3e2f4fb747bebdf43031ce2182f409d1
         <activity android:name=".toolbar.ToolBarTest" />
         <activity android:name=".menu.OptionMenuTest" />
         <activity android:name=".tab.TabTest"/>

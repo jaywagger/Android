@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onMapReady(GoogleMap googleMap) {
         Log.d("mymap","준비완료");
+
         map = googleMap;
         if(map!=null){
             //위도, 경도를 셋팅
