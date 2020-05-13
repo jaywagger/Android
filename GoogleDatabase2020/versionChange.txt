@@ -1,0 +1,12 @@
+com.google.android.material.floatingactionbutton.FloatingActionButton
+
+androidx.coordinatorlayout.widget.CoordinatorLayout
+
+androidx.constraintlayout.widget.ConstraintLayout
+
+androidx.recyclerview.widget.RecyclerView
+
+
+ 1. Auth 유저 불러온다.    getUserDetails
+            2. 위치 파악             getLastKnown
+            3. 파악한 위치 등록        saveUserLocation

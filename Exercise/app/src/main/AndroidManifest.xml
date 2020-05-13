@@ -18,8 +18,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".childView.bottomAppBar" />
 
-        <activity android:name=".childView.ChildFirstPage"/>
-        <activity android:name=".Among.bottom.bottomNavigationBar">
+        <activity android:name=".Among.bottom.bottomNavigationBar"/>
+        <activity android:name=".childView.ChildFirstPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "53545271064",
+    "firebase_url": "https://database2020-e09d4.firebaseio.com",
+    "project_id": "database2020-e09d4",
+    "storage_bucket": "database2020-e09d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53545271064:android:d45be889df8ee6d4efe86d",
+        "android_client_info": {
+          "package_name": "com.example.googledatabase2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53545271064-58b2mp7l5e97s1mpgbnh1vm0qa2p467f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJN0uzGYFhRlJ7Ora0oPoa0JJcKrYSKXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53545271064-58b2mp7l5e97s1mpgbnh1vm0qa2p467f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

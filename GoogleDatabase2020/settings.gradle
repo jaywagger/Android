@@ -1,0 +1,2 @@
+rootProject.name='GoogleDatabase2020'
+include ':app'

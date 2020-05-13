@@ -46,20 +46,20 @@ public class JSONTestActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
         container = findViewById(R.id.container);
         list = new ArrayList<>();
-        // progressDialog = new ProgressDialog(this);
+       // progressDialog = new ProgressDialog(this);
         HttpTest task = new HttpTest();
         task.execute();
 
     }
     class HttpTest extends AsyncTask<Void,Void,String>{
 
-        /* @Override
-         protected void onPreExecute() {
-             progressDialog.setTitle("HTTP Connect ..");
-             progressDialog.setMessage("Please Wait..");
-             progressDialog.setCancelable(false);
-             progressDialog.show();
-         }*/
+       /* @Override
+        protected void onPreExecute() {
+            progressDialog.setTitle("HTTP Connect ..");
+            progressDialog.setMessage("Please Wait..");
+            progressDialog.setCancelable(false);
+            progressDialog.show();
+        }*/
         @Override
         protected String doInBackground(Void... voids) {
             URL url = null;
@@ -73,28 +73,20 @@ public class JSONTestActivity extends AppCompatActivity {
                 //메인쓰레드는 정지시킬 수 없다.
                 //웹 상의 리소스를 가져오기 위해서 URL객체를 생성
                 String path =
-                        "http://70.12.115.61:8088/bigdataShop/product/show_json";
+                   "http://70.12.115.50:8088/bigdataShop/product/show_json";
                 url = new URL(path);
-                //웹서버에 연결
                 HttpURLConnection connection =
-                        (HttpURLConnection) url.openConnection();
-                //연결된 HttpURLConnection에 정보 설정
+                                (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
                 connection.setRequestProperty("Content-Type"
-                        ,"application/json");
-                //응답을 정상으로 받았을때 실행하겠다는 의미
+                                    ,"application/json");
                 if(connection.getResponseCode()==HttpURLConnection.HTTP_OK){
-                    //연결된 서버에서 응답메시지를 받은 경우 응답메시지를
-                    //BufferedReader로 읽어온다.
-                    // - JSON데이터가 모두 BufferedReader에서 읽을 수 있도록 설정
-
                     in = new BufferedReader(
-                            new InputStreamReader(
-                                    connection.getInputStream(),"UTF-8")
-                    );
+                                 new InputStreamReader(
+                                     connection.getInputStream(),"UTF-8")
+                            );
                     data = in.readLine();
                     Log.d("myhttp",data);
-
                 }
 
             } catch (MalformedURLException e) {
@@ -109,7 +101,7 @@ public class JSONTestActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            // progressDialog.dismiss();
+           // progressDialog.dismiss();
 
             //웹서버에서 가져온 데이터가 json형식이므로
             //파싱해서 JSONObject를 ProductDTO로 변환
@@ -173,7 +165,7 @@ public class JSONTestActivity extends AppCompatActivity {
             prd_nm.setText(alist.get(position).getPrd_nm());
 
             String img = alist.get(position).getImg_gen_file_nm();
-            img = "http://70.12.115.61:8088/bigdataShop/images/product/"+img;
+            img = "http://70.12.115.50:8088/bigdataShop/images/product/"+img;
             final String finalImg = img;
             Thread t = new Thread(new Runnable() {
                 @Override

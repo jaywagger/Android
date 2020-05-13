@@ -19,7 +19,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class bottomNavigationBar extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigation;
-    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
