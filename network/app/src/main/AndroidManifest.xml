@@ -14,7 +14,8 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".tcp.StartNetWork"/>
         <activity android:name=".tcp.ChatClientActivity2" />
-        <activity android:name=".LEDControl.LEDControl">
+        <activity android:name=".LEDControl.LEDControl"/>
+        <activity android:name=".arduino.LedControlActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

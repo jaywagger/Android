@@ -59,7 +59,7 @@
         android:id="@+id/btnCheck3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="체크상태 햐재"/>
+        android:text="체크상태 해재"/>
     <Button
         android:id="@+id/btnCheck4"
         android:layout_width="match_parent"
