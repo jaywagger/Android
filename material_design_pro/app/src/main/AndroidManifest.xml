@@ -10,17 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".exam.FragmentExam01"/>
-        <activity android:name=".actionbar.ActionBarTest" />
+        <activity android:name=".actionbar.ActionBarNavi" />
         <activity android:name=".actionbar.SubActivity" />
 
         <activity android:name=".toolbar.ToolBarTest" />
-        <activity android:name=".menu.OptionMenuTest" />
+        <activity android:name=".actionbar.ActionBarTest" />
         <activity android:name=".tab.TabTest"/>
         <activity android:name=".tab.TabTest2" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".actionbar.ActionBarNavi" />
+        <activity android:name=".appbar.AppbarTest" />
 
-        <activity android:name=".appbar.AppbarTest" >
+        <activity android:name=".menu.OptionMenuTest" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
